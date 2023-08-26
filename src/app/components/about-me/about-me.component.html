@@ -1,0 +1,11 @@
+<div class="border-main">
+    <div *ngFor="let para of aboutMe">
+        <p [innerHTML]="para"></p>
+    </div>
+    <div class="achievements">
+        <div *ngFor="let achievement of achievements" class="achievement-container">
+            <div class="header-achievements">{{achievement[0]}}</div>
+            <div>{{achievement[1]}}</div>
+        </div>
+    </div>
+</div>

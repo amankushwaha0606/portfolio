@@ -1,0 +1,42 @@
+<div *ngFor="let journey of journies">
+    <div class="card-box-heading">
+        <i class="fa-solid fa-wave-square journey-icon"></i>
+        <span>
+            {{journey.title}}
+        </span>
+        <div class="project-link-list" *ngIf="journey.links">
+            <a href="" *ngFor="let link of journey.links">{{link.name}}</a>
+        </div>
+    </div>
+    <div class="d-flex">
+        <div *ngIf="journey.subHeadings">
+            <div class="more-line">
+            </div>
+        </div>
+        <div class="px-4 py-2" style="gap: 1rem; display: flex; flex-direction: column;">
+            <div *ngFor="let detail of journey.details">
+                {{detail}}
+            </div>
+            <div *ngIf="!journey.showMore" class="d-flex flex-wrap" style="gap: 1rem;">
+                <div *ngFor="let subHeading of journey.subHeadings" class="sub-heading">
+                    <div>
+                        {{subHeading.title}}
+                    </div>
+                </div>
+            </div>
+            <ng-container *ngIf="journey.subHeadings && journey.subHeadings.length > 0 ">
+                <div *ngIf="!journey.showMore">
+                    <button (click)="journey.showMore = !journey.showMore" class="text-button-bold-small" role="button">
+                        show in details
+                    </button>
+                </div>
+                <div *ngIf="journey.showMore">
+                    <button (click)="journey.showMore = !journey.showMore" class="text-button-bold-small" role="button">
+                        hide details
+                    </button>
+                    <journey-segment [journies]="journey.subHeadings"></journey-segment>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
