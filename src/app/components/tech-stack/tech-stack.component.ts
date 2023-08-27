@@ -10,67 +10,67 @@ export class TechStackComponent {
     {
       rating: 4.3,
       title: 'CSS',
-      imgPath: '../../../assets/img/css.png',
+      imgPath: 'assets/img/css.png',
     },
     {
       rating: 4.3,
       title: 'GitHub',
-      imgPath: '../../../assets/img/github.png',
+      imgPath: 'assets/img/github.png',
     },
     {
       rating: 4.3,
       title: 'HTML',
-      imgPath: '../../../assets/img/html.png',
+      imgPath: 'assets/img/html.png',
     },
     {
       rating: 4.3,
       title: 'Javascript',
-      imgPath: '../../../assets/img/javascript.png',
+      imgPath: 'assets/img/javascript.png',
     },
     {
       rating: 4.3,
       title: 'Netlify',
-      imgPath: '../../../assets/img/netlify.png',
+      imgPath: 'assets/img/netlify.png',
     },
     {
       rating: 4.3,
       title: 'NodeJs',
-      imgPath: '../../../assets/img/nodejs.png',
+      imgPath: 'assets/img/nodejs.png',
     },
     {
       rating: 4.3,
       title: 'NPM',
-      imgPath: '../../../assets/img/npm.png',
+      imgPath: 'assets/img/npm.png',
     },
     {
       rating: 4.3,
       title: 'Postman',
-      imgPath: '../../../assets/img/postman.png',
+      imgPath: 'assets/img/postman.png',
     },
     {
       rating: 4.3,
       title: 'ReactJs',
-      imgPath: '../../../assets/img/react.png',
+      imgPath: 'assets/img/react.png',
     },
     {
       rating: 4.3,
       title: 'Typescript',
-      imgPath: '../../../assets/img/typescript.png',
+      imgPath: 'assets/img/typescript.png',
     },
     {
       rating: 4.3,
       title: 'VS Code',
-      imgPath: '../../../assets/img/vscode.jpg',
+      imgPath: 'assets/img/vscode.jpg',
     },
     {
       rating: 4.3,
       title: 'Flutter',
-      imgPath: '../../../assets/img/flutter.png',
+      imgPath: 'assets/img/flutter.png',
     },
     {
       rating: 4.3,
       title: 'Firebase',
-      imgPath: '../../../assets/img/firebase.png',
+      imgPath: 'assets/img/firebase.png',
     },
   ];
 }

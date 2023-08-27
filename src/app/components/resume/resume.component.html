@@ -1,9 +1,10 @@
 <div>
     <div class="resume-header">
-        <i class="normal-icons gradient-color mx-3 fa-solid fa-copy"></i>
-        <button class="text-button-bold" role="button">
-            Download
-        </button>
+        <i class="normal-icons gradient-color fa-solid fa-copy"
+            (click)="copyText('https://drive.google.com/drive/folders/11lCjunaYO8WR0N2y8RqzueGeo9sraBMu?usp=sharing')"></i>
+        <a href="assets/ResumeAmanSinghKushwaha.pdf" download="ResumeAmanSinghKushwaha.pdf">
+            <i class="normal-icons gradient-color fa-solid fa-file-arrow-down"></i>
+        </a>
     </div>
     <journey-segment [journies]="journies"></journey-segment>
 </div>

@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
 }
-
-@media screen and (max-width: 576px) {
-
+.message-position {
+    position: fixed;
+    bottom: 0rem;
+    left: 0rem;
+    margin: 1rem;
 }

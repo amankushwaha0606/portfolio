@@ -1,5 +1,5 @@
-<div class="d-flex img-list">
-    <div *ngFor="let item of techStacks" class="img-container p-3">
+<div class="img-list">
+    <div *ngFor="let item of techStacks" class="img-container">
         <img [src]="item.imgPath" class="tech-stack-icons">
         <div class="my-2">{{item.title}}</div>
         <div class="rating my-1">{{item.rating}}/5</div>

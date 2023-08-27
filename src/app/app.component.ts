@@ -1,15 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonService } from './common.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'Aman Singh Kushwaha';
+export class AppComponent implements OnInit {
 
-  selectedSection = -1;
+  title: string = 'Aman Singh Kushwaha';
+  selectedSection:number = -1;
+  message: string = '';
+  subscription: Subscription;
 
+  constructor(private commonService: CommonService) {
+    this.subscription = this.commonService.messageSubject.subscribe(message => {
+      this.message = message;
+    });
+  }
+
+  ngOnInit(): void {
+  }
+  
   toggleSection(index: number) {
     if(this.selectedSection == index) {
       this.selectedSection = -1;

@@ -1,4 +1,10 @@
 .text-button-bold {
     width: 100%;
     justify-content: flex-start;
+    align-items: flex-start;
+    text-align: inherit;
+    height: auto;
+}
+.text-button-bold > div {
+    overflow-wrap: anywhere;
 }

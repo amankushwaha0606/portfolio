@@ -2,18 +2,23 @@
     height: 5rem;
     width: 5rem;
 }
+
 .rating {
     display: flex;
     justify-content: center;
 }
+
 img {
     mix-blend-mode: multiply;
 }
+
 .img-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    gap: 1rem;
     justify-content: center;
 }
+
 .img-container {
     text-align: center;
 }

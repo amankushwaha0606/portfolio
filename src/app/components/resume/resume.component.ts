@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonService } from 'src/app/common.service';
 
 const JOURNIES = [
   {
@@ -99,4 +100,10 @@ const JOURNIES = [
 })
 export class ResumeComponent {
   public journies = JSON.parse(JSON.stringify(JOURNIES));
+
+  constructor(private commonService: CommonService) {}
+
+  copyText(textToCopy: string) {
+    this.commonService.copyText(textToCopy);
+  }
 }

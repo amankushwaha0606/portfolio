@@ -119,28 +119,28 @@ body {
     /* Required for tooltip positioning */
 }
 
-.text-button-bold:hover::before {
-    content: attr(data-tooltip);
-    /* Use the 'title' attribute as the tooltip text */
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: calc(100% + 5px);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease, visibility 0.2s ease;
-}
+// .text-button-bold:hover::before {
+//     content: attr(data-tooltip);
+//     /* Use the 'title' attribute as the tooltip text */
+//     position: absolute;
+//     background-color: rgba(0, 0, 0, 0.8);
+//     color: #fff;
+//     padding: 5px 10px;
+//     border-radius: 5px;
+//     font-size: 14px;
+//     white-space: nowrap;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     bottom: calc(100% + 5px);
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: opacity 0.2s ease, visibility 0.2s ease;
+// }
 
-.text-button-bold:hover::before {
-    opacity: 1;
-    visibility: visible;
-}
+// .text-button-bold:hover::before {
+//     opacity: 1;
+//     visibility: visible;
+// }
 
 .border-main {
     border: 2px solid white;
