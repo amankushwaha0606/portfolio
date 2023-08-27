@@ -14,7 +14,7 @@ body {
     white-space: nowrap;
     border-right: 0.15em solid var(--bold-text-color);
     color: var(--bold-text-color);
-    animation: typing 3s steps(27, end) infinite, blink-caret 0.75s step-end infinite;
+    animation: typing 3s steps(27, end) infinite;
 }
 
 @keyframes typing {
@@ -23,19 +23,7 @@ body {
     }
 
     to {
-        width: 27ch;
-    }
-}
-
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: var(--bold-text-color);
+        width: 26ch;
     }
 }
 
@@ -158,7 +146,8 @@ body {
     border: 2px solid white;
     border-radius: 1rem;
     padding: 1rem;
-    margin: 1rem 0;
+    // margin: 1rem;
+    background-color: white;
 }
 
 .project-link-list {
@@ -189,7 +178,13 @@ body {
     flex-wrap: wrap;
 }
 
-.top-card>div:hover {
+.tablet-outer {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.selected-top-card {
     background-color: white;
 }
 
@@ -201,6 +196,10 @@ body {
 
     .top-card {
         padding: 1rem;
+    }
+
+    .top-card>div:hover {
+        background-color: white;
     }
 }
 
@@ -241,7 +240,7 @@ body {
 
     .card-box {
         border-radius: 1rem;
-        padding: 0rem;
+        padding: 1rem 0rem;
         height: 100%;
         display: flex;
         width: fit-content;
@@ -270,5 +269,9 @@ body {
         display: flex;
         justify-content: center;
         gap: 10px;
+    }
+
+    .selected-top-card {
+        padding: 1rem;
     }
 }

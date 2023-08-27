@@ -17,3 +17,10 @@ img {
 .img-container {
     text-align: center;
 }
+
+@media screen and (max-width: 576px) {
+    .tech-stack-icons {
+        height: 3rem;
+        width: 3rem;
+    }
+}

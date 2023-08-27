@@ -4,11 +4,11 @@
       <h3 class="typing-header">
         Hii I'm Aman Singh Kushwaha!
       </h3>
-      <i class="fa-solid fa-gear card-box-icon gradient-color"></i>
+      <!-- <i class="fa-solid fa-gear card-box-icon gradient-color"></i> -->
     </div>
     <div class="d-flex header-list">
       <div class="col-lg-3 top-card">
-        <div class="card-box" role="button" (click)="toggleSection(1)">
+        <div class="card-box" [ngClass]="{'selected-top-card' : selectedSection == 1}" role="button" (click)="toggleSection(1)">
           <br>
           <i class="fa-solid fa-user card-box-icon gradient-color"></i>
           <div class="card-box-heading">
@@ -17,21 +17,21 @@
         </div>
       </div>
       <div class="col-lg-3 top-card">
-        <div class="card-box" role="button" (click)="toggleSection(2)">
+        <div class="card-box" [ngClass]="{'selected-top-card' : selectedSection == 2}" role="button" (click)="toggleSection(2)">
           <br>
           <i class="fa-solid fa-school card-box-icon gradient-color"></i>
           <div class="card-box-heading">Education</div>
         </div>
       </div>
       <div class="col-lg-6 top-card">
-        <div class="card-box" role="button" (click)="toggleSection(3)">
+        <div class="card-box" [ngClass]="{'selected-top-card' : selectedSection == 3}" role="button" (click)="toggleSection(3)">
           <br>
           <i class="fa-solid fa-user card-box-icon gradient-color"></i>
           <div class="main-heading">My Backstory</div>
         </div>
       </div>
       <div class="col-lg-6 top-card">
-        <div class="card-box" role="button" (click)="toggleSection(4)">
+        <div class="card-box" [ngClass]="{'selected-top-card' : selectedSection == 4}" role="button" (click)="toggleSection(4)">
           <br>
           <i class="fa-solid fa-list-check card-box-icon gradient-color"></i>
           <div class="main-heading">
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="col-lg-3 top-card">
-        <div class="card-box" role="button" (click)="toggleSection(5)">
+        <div class="card-box" [ngClass]="{'selected-top-card' : selectedSection == 5}" role="button" (click)="toggleSection(5)">
           <br>
           <i class="fa-solid fa-screwdriver-wrench card-box-icon gradient-color"></i>
           <div class="card-box-heading">
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="col-lg-3 top-card">
-        <div class="card-box" role="button" (click)="toggleSection(6)">
+        <div class="card-box" [ngClass]="{'selected-top-card' : selectedSection == 6}" role="button" (click)="toggleSection(6)">
           <br>
           <i class="fa-solid fa-address-book card-box-icon gradient-color"></i>
           <div class="card-box-heading">
@@ -58,22 +58,22 @@
         </div>
       </div>
     </div>
-    <div class="col-12" *ngIf="selectedSection == 1">
+    <div class="col-12 border-main" *ngIf="selectedSection == 1">
       <resume></resume>
     </div>
-    <div class="col-12" *ngIf="selectedSection == 2">
+    <div class="col-12 border-main" *ngIf="selectedSection == 2">
       <education></education>
     </div>
-    <div class="col-12" *ngIf="selectedSection == 3">
+    <div class="col-12 border-main" *ngIf="selectedSection == 3">
       <about-me></about-me>
     </div>
-    <div class="col-12" *ngIf="selectedSection == 4">
+    <div class="col-12 border-main" *ngIf="selectedSection == 4">
       <projects></projects>
     </div>
-    <div class="col-12" *ngIf="selectedSection == 5">
+    <div class="col-12 border-main" *ngIf="selectedSection == 5">
       <tech-stack></tech-stack>
     </div>
-    <div class="col-12" *ngIf="selectedSection == 6">
+    <div class="col-12 border-main" *ngIf="selectedSection == 6">
       <contact></contact>
     </div>
     <div>
