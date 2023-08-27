@@ -1,34 +1,34 @@
 <div>
     <div class="my-1">
-        <button class="text-button-bold" role="button" (click)="copyText('amankushwaha2001@gmail.com')">
+        <button class="text-button-bold" role="button" (click)="copyText(contactLinks[0])">
             <i class="normal-icons gradient-color fa-solid fa-envelope"></i>
-            <div class="mx-3">amankushwaha2001@gmail.com</div>
+            <div class="mx-3">{{contactLinks[0]}}</div>
             <i class="normal-icons gradient-color ml-auto fa-solid fa-copy"></i>
         </button>
     </div>
     <div class="my-1">
-        <button class="text-button-bold" role="button" (click)="copyText('https://www.linkedin.com/in/amankushwaha0606/')">
+        <button class="text-button-bold" role="button" (click)="copyText(contactLinks[1])">
             <i class="normal-icons gradient-color fa-brands fa-linkedin"></i>
-            <div class="mx-3">https://www.linkedin.com/in/amankushwaha0606/</div>
+            <div class="mx-3">{{contactLinks[1]}}</div>
             <i class="normal-icons gradient-color ml-auto fa-solid fa-copy"></i>
         </button>
     </div>
     <div class="my-1">
-        <button class="text-button-bold" role="button" (click)="copyText('https://github.com/amankushwaha0606/')">
+        <button class="text-button-bold" role="button" (click)="copyText(contactLinks[2])">
             <i class="normal-icons gradient-color fa-brands fa-square-github"></i>
-            <div class="mx-3">https://github.com/amankushwaha0606/</div>
+            <div class="mx-3">{{contactLinks[2]}}</div>
         </button>
     </div>
     <div class="my-1">
-        <button class="text-button-bold" role="button" (click)="copyText('Kanpur, Uttar Pradesh 208025')">
+        <button class="text-button-bold" role="button" (click)="copyText(contactLinks[3])">
             <i class="normal-icons gradient-color fa-solid fa-house-chimney"></i>
-            <div class="mx-3">Kanpur, Uttar Pradesh 208025</div>
+            <div class="mx-3">{{contactLinks[3]}}</div>
         </button>
     </div>
     <div class="my-1">
-        <button class="text-button-bold" role="button" (click)="copyText('IT Park, Chandigarh')">
+        <button class="text-button-bold" role="button" (click)="copyText(contactLinks[4])">
             <i class="normal-icons gradient-color fa-solid fa-location-dot"></i>
-            <div class="mx-3">IT Park, Chandigarh</div>
+            <div class="mx-3">{{contactLinks[4]}}</div>
         </button>
     </div>
 </div>

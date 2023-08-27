@@ -1,0 +1,13 @@
+{
+  "aboutMe": [
+    "Hello there! I'm <strong>Aman Singh Kushwaha</strong>, a passionate and driven frontend developer with an insatiable hunger for knowledge. Born on June 6, 2000, I bring a youthful and dynamic energy to every project I undertake.",
+    "My journey into the world of development began with a spark of curiosity, which has grown into a blazing flame of expertise. As a frontend developer, I'm constantly exploring new technologies and pushing the boundaries of user interface design to create seamless and captivating digital experiences."
+  ],
+  "achievements": [
+    ["23+", "Years of Learning"],
+    ["4", "Played in State level ( Handball )"],
+    ["2", "Inter IIT Sports meet ( Hockey )"],
+    ["5+", "Years of Coding"],
+    ["30+", "Travaeled Cities"]
+  ]
+}

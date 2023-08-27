@@ -1,20 +1,16 @@
 <div class="icon-container">
     <div class="icon-wrapper">
-        <div (click)="copyText('https://www.linkedin.com/in/amankushwaha0606/')">
+        <div (click)="copyText(socialMediaLinks[0].link)">
             <i class="normal-icons gradient-color fa-brands fa-linkedin"></i>
-            <span class="icon-text">LinkedIn</span>
+            <span class="icon-text">{{socialMediaLinks[0].name}}</span>
         </div>
-        <div (click)="copyText('https://github.com/amankushwaha0606/')">
+        <div (click)="copyText(socialMediaLinks[1].link)">
             <i class="normal-icons gradient-color fa-brands fa-square-github"></i>
-            <span class="icon-text">GitHub</span>
+            <span class="icon-text">{{socialMediaLinks[1].name}}</span>
         </div>
-        <div (click)="copyText('amankushwaha2001@gmail.com')">
+        <div (click)="copyText(socialMediaLinks[2].link)">
             <i class="normal-icons gradient-color fa-solid fa-envelope"></i>
-            <span class="icon-text">Mail</span>
+            <span class="icon-text">{{socialMediaLinks[2].name}}</span>
         </div>
-        <!-- <div>
-            <i class="normal-icons gradient-color fa-brands fa-square-instagram"></i>
-            <span class="icon-text">Instagram</span>
-        </div> -->
     </div>
 </div>

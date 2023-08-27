@@ -7,8 +7,12 @@ import { CommonService } from 'src/app/common.service';
   styleUrls: ['./social-media-menu.component.scss'],
 })
 export class SocialMediaMenuComponent {
-  constructor(private commonService: CommonService) {}
-
+  socialMediaLinks: any;
+  constructor(private commonService: CommonService) {
+    this.commonService.getExtraData().subscribe((res: any) => {
+      this.socialMediaLinks = res.socialMediaLinks;
+    });
+  }
   copyText(textToCopy: string) {
     this.commonService.copyText(textToCopy);
   }

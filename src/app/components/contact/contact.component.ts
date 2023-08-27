@@ -7,8 +7,12 @@ import { CommonService } from 'src/app/common.service';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  constructor(private commonService: CommonService) {}
-
+  contactLinks: any;
+  constructor(private commonService: CommonService) {
+    this.commonService.getExtraData().subscribe((res: any) => {
+      this.contactLinks = res.contactLinks;
+    });
+  }
   copyText(textToCopy: string) {
     this.commonService.copyText(textToCopy);
   }
