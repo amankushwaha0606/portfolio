@@ -10,8 +10,12 @@ export class JourneyComponent {
   journies: any;
 
   constructor(private commonService: CommonService) {
-    this.commonService.getData().subscribe((res: any) => {
-      this.journies = res;
+    this.commonService.dataLoadSubject.subscribe((res: any) => {
+      if (res) {
+        this.commonService.getJourneyData().subscribe((res: any) => {
+          this.journies = res;
+        });
+      }
     });
   }
 }

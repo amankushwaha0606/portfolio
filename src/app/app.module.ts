@@ -15,6 +15,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { TechStackComponent } from './components/tech-stack/tech-stack.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MessageComponent } from './components/message/message.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MessageComponent } from './components/message/message.component';
     TechStackComponent,
     ContactComponent,
     MessageComponent,
+    LoaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [CommonService],
